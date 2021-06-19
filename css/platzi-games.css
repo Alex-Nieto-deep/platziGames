@@ -490,7 +490,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .perfil {
@@ -630,13 +630,14 @@ main {
 }
 
 .galeria {
-  width: 50%;
+  width: 55%;
   height: 250px;
   margin: 10px auto;
   padding: 20px 0 0 30px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   border-radius: 20px;
   background-color: #FFF;
   color: #333333;
@@ -924,6 +925,54 @@ main {
 }
 .header__busqueda span {
   color: #3f579a;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer--principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 160px;
+  margin-top: 30px;
+  padding: 0 20px 20px 20px;
+  background-color: #333333;
+}
+
+.nav--footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 35px;
+}
+.nav--footer ul li {
+  list-style: none;
+  margin-right: 50px;
+}
+.nav--footer ul a {
+  color: #FFF;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nav--social {
+  margin-left: auto;
+}
+.nav--social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 35px;
+}
+.nav--social li {
+  list-style: none;
+  margin-right: 50px;
+  color: #FFF;
+}
+.nav--social a {
+  color: #FFF;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 700;

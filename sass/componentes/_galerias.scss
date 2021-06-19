@@ -1,10 +1,9 @@
 .galeria {
-
-	width: 50%;
+	width: 55%;
 	height: 250px;
 	margin: 10px auto;
 	padding: 20px 0 0 30px;
-	justify-content: space-evenly;
+	flex-direction: row-reverse;
 	border-radius: 20px;
 	background-color: $color-claro;
 	@include caja;
