@@ -29,6 +29,16 @@ $color-claro: #FFF;
 	}
 }
 
+@function calculateRem($size){
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+	line-height: calculateRem($size)*1.5;	
+}
 
 // Funciones
 @function get-opacity($color, $amount) {
@@ -48,6 +58,7 @@ body {
 	background-color: #F9FAFC;
 	color: $color-primario;
 	@include titulos($Fuente1);
+	@include font-size(18px)
 }
 
 main {
