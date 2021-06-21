@@ -58,7 +58,7 @@ body {
 	background-color: #F9FAFC;
 	color: $color-primario;
 	@include titulos($Fuente1);
-	@include font-size(18px)
+	@include font-size(18px);
 }
 
 main {
